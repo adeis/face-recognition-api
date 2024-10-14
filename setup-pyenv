@@ -1,0 +1,23 @@
+#!/bin/bash
+# make sure you have pyenv installed
+# uncomment to install
+
+#pyenv install 3.10.10
+#pyenv rehash
+
+
+# use local python version
+pyenv local 3.10.10
+
+# use global python version
+# pyenv global 3.10.10
+
+#use venv
+source myenv/bin/activate
+
+# install cmake ubuntu
+sudo apt install cmake
+
+# install pip requirements
+pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
