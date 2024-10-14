@@ -17,7 +17,31 @@ source myenv/bin/activate
 
 # install cmake ubuntu
 sudo apt install cmake
+1. Install dependencies:
+2. Create a virtual environment:
+   ```
+   python3 -m venv myenv
+   ```
 
+3. Activate the virtual environment:
+   On Windows:
+   ```
+   myenv\Scripts\activate
+   ```
+   On MacOS/Linux:
+   ```
+   source myenv/bin/activate
+   ```
+
+4. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+5. Run the application:
+   ```
+   flask run
+   ```
 # install pip requirements
 pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
