@@ -1,6 +1,7 @@
 import numpy as np
 import cv2
 import cvface
+import datetime
 import face_recognition
 from flask import Flask, request, jsonify
 
@@ -31,6 +32,12 @@ def recognize():
     print(result)
     
     return jsonify(result)
+
+#create route /ping
+@app.route('/ping', methods=['GET'])
+def ping():
+    #return datetime as string
+    return str(datetime.datetime.now())
 
 if __name__ == '__main__':
     app.run(debug=True)
